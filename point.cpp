@@ -4,30 +4,30 @@
 
 using namespace std;
 
-void point::setX(float _x){
+void Point::setX(float _x){
     x=_x;
 }
 
-void point::setY(float _y){
+void Point::setY(float _y){
     y=_y;
 }
 
-void point::setXY(float _x,float _y){
+void Point::setXY(float _x,float _y){
     x=_x;
     y=_y;
 }
 
-float point::getX(void){
+float Point::getX(void){
     return x;
 }
 
-float point::getY(void){
+float Point::getY(void){
     return y;
 }
 
-point point::add(point p1){
+Point Point::add(Point p1){
 
-    point pAdd;
+    Point pAdd;
 
     pAdd.x=x+p1.x;
     pAdd.y=y+p1.y;
@@ -35,15 +35,15 @@ point point::add(point p1){
     return pAdd;
 }
 
-float point::norma(void){
+float Point::norma(void){
     return sqrt(pow(x,2)+pow(y,2));
 }
 
-void point::translada(float a, float b){
+void Point::translada(float a, float b){
     x=x+a;
     y=y+b;
 }
 
-void point::imprime(void){
+void Point::imprime(void){
     cout<<"("<<x<<","<<y<<")";
 }

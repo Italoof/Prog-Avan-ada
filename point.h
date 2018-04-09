@@ -1,7 +1,7 @@
 #ifndef POINT_H
 #define POINT_H
 
-class point{
+class Point{
 
 private:
     float x,y;
@@ -17,7 +17,7 @@ public:
 
     float getY(void);
 
-    point add(point p1);
+    Point add(Point p1);
 
     float norma(void);
 
