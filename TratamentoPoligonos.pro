@@ -5,9 +5,11 @@ CONFIG -= qt
 
 SOURCES += main.cpp \
     point.cpp \
-    poligono.cpp
+    poligono.cpp \
+    retangulo.cpp
 
 HEADERS += \
     point.h \
-    poligono.h
+    poligono.h \
+    retangulo.h
 
