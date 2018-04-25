@@ -35,6 +35,16 @@ Point Point::add(Point p1){
     return pAdd;
 }
 
+Point Point::sub(Point p1)
+{
+    Point pAdd;
+
+    pAdd.x=x-p1.x;
+    pAdd.y=y-p1.y;
+
+    return pAdd;
+}
+
 float Point::norma(void){
     return sqrt(pow(x,2)+pow(y,2));
 }

@@ -1,0 +1,186 @@
+\hypertarget{class_point}{}\section{Referência à classe Point}
+\label{class_point}\index{Point@{Point}}
+
+
+The \hyperlink{class_point}{Point} class funciona para manipular pontos com coordenadas (x,y).  
+
+
+
+
+{\ttfamily \#include $<$point.\+h$>$}
+
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_point_a428a1676e2fdec6753c42011a1d59d18}{setX} (float \+\_\+x)
+\begin{DoxyCompactList}\small\item\em Insere o valor da coordenada x. \end{DoxyCompactList}\item 
+void \hyperlink{class_point_a9868c4601b0ea0c2d0de20fe41ee0e49}{setY} (float \+\_\+y)
+\begin{DoxyCompactList}\small\item\em Insere o valor da coordenada y. \end{DoxyCompactList}\item 
+void \hyperlink{class_point_ab5385c6d9bfa841e641e4709fc9f14cc}{set\+XY} (float \+\_\+x, float \+\_\+y)
+\begin{DoxyCompactList}\small\item\em Insere as posições x e y. \end{DoxyCompactList}\item 
+float \hyperlink{class_point_a9aa94b8fd07296e64d304ef3750db113}{getX} (void)
+\begin{DoxyCompactList}\small\item\em Recupera a posição x. \end{DoxyCompactList}\item 
+float \hyperlink{class_point_a2444daa96871c89614510bc4bfcd19ce}{getY} (void)
+\begin{DoxyCompactList}\small\item\em Recupera a posição y. \end{DoxyCompactList}\item 
+\hyperlink{class_point}{Point} \hyperlink{class_point_a9dbea84b07b0a8ec3bbb9e58b3d15899}{add} (\hyperlink{class_point}{Point} p1)
+\begin{DoxyCompactList}\small\item\em Adiciona as coordenadas (x,y) do ponto com as coordenadas de um ponto P1(x1,y1) fornecido. \end{DoxyCompactList}\item 
+\hyperlink{class_point}{Point} \hyperlink{class_point_a9cf2c53b0a4e6282a6712824bb4e9b00}{sub} (\hyperlink{class_point}{Point} p1)
+\begin{DoxyCompactList}\small\item\em Subtrai as coordenadas (x,y) do ponto com as coordenadas de um ponto P1(x1,y1) fornecido. \end{DoxyCompactList}\item 
+float \hyperlink{class_point_aa3005a9d97e2cb05624414973a214788}{norma} (void)
+\begin{DoxyCompactList}\small\item\em Calcula a distância do ponto para a origem do sistema de coordenadas. \end{DoxyCompactList}\item 
+void \hyperlink{class_point_ad9676e36f3444534b609e3c68422239a}{translada} (float a, float b)
+\begin{DoxyCompactList}\small\item\em Transalada o ponto (x,y) de (+a,+b). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_point_a188350fb70e5b297a659a31ab8887ca3}\label{class_point_a188350fb70e5b297a659a31ab8887ca3}} 
+void \hyperlink{class_point_a188350fb70e5b297a659a31ab8887ca3}{imprime} (void)
+\begin{DoxyCompactList}\small\item\em Imprime o ponto na forma (x,y). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+The \hyperlink{class_point}{Point} class funciona para manipular pontos com coordenadas (x,y). 
+
+\subsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_point_a9dbea84b07b0a8ec3bbb9e58b3d15899}\label{class_point_a9dbea84b07b0a8ec3bbb9e58b3d15899}} 
+\index{Point@{Point}!add@{add}}
+\index{add@{add}!Point@{Point}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \hyperlink{class_point}{Point} Point\+::add (\begin{DoxyParamCaption}\item[{\hyperlink{class_point}{Point}}]{p1 }\end{DoxyParamCaption})}
+
+
+
+Adiciona as coordenadas (x,y) do ponto com as coordenadas de um ponto P1(x1,y1) fornecido. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em p1} & Ponto com coordenadas (x1,y1) a serem somadas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Novo ponto com coordenadas (x+x1,y+y1). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point_a9aa94b8fd07296e64d304ef3750db113}\label{class_point_a9aa94b8fd07296e64d304ef3750db113}} 
+\index{Point@{Point}!getX@{getX}}
+\index{getX@{getX}!Point@{Point}}
+\subsubsection{\texorpdfstring{get\+X()}{getX()}}
+{\footnotesize\ttfamily float Point\+::getX (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Recupera a posição x. 
+
+\begin{DoxyReturn}{Retorna}
+Coordenada x do ponto. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point_a2444daa96871c89614510bc4bfcd19ce}\label{class_point_a2444daa96871c89614510bc4bfcd19ce}} 
+\index{Point@{Point}!getY@{getY}}
+\index{getY@{getY}!Point@{Point}}
+\subsubsection{\texorpdfstring{get\+Y()}{getY()}}
+{\footnotesize\ttfamily float Point\+::getY (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Recupera a posição y. 
+
+\begin{DoxyReturn}{Retorna}
+Coordenada y do ponto. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point_aa3005a9d97e2cb05624414973a214788}\label{class_point_aa3005a9d97e2cb05624414973a214788}} 
+\index{Point@{Point}!norma@{norma}}
+\index{norma@{norma}!Point@{Point}}
+\subsubsection{\texorpdfstring{norma()}{norma()}}
+{\footnotesize\ttfamily float Point\+::norma (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Calcula a distância do ponto para a origem do sistema de coordenadas. 
+
+\begin{DoxyReturn}{Retorna}
+Distância entre (x,y) e (0,0). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point_a428a1676e2fdec6753c42011a1d59d18}\label{class_point_a428a1676e2fdec6753c42011a1d59d18}} 
+\index{Point@{Point}!setX@{setX}}
+\index{setX@{setX}!Point@{Point}}
+\subsubsection{\texorpdfstring{set\+X()}{setX()}}
+{\footnotesize\ttfamily void Point\+::setX (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x }\end{DoxyParamCaption})}
+
+
+
+Insere o valor da coordenada x. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em \+\_\+x} & Coordenada x a ser inserida. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_point_ab5385c6d9bfa841e641e4709fc9f14cc}\label{class_point_ab5385c6d9bfa841e641e4709fc9f14cc}} 
+\index{Point@{Point}!set\+XY@{set\+XY}}
+\index{set\+XY@{set\+XY}!Point@{Point}}
+\subsubsection{\texorpdfstring{set\+X\+Y()}{setXY()}}
+{\footnotesize\ttfamily void Point\+::set\+XY (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x,  }\item[{float}]{\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Insere as posições x e y. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em \+\_\+x} & Coordenada x a ser coordenada. \\
+\hline
+{\em \+\_\+y} & Coordenada y a ser coordenada. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_point_a9868c4601b0ea0c2d0de20fe41ee0e49}\label{class_point_a9868c4601b0ea0c2d0de20fe41ee0e49}} 
+\index{Point@{Point}!setY@{setY}}
+\index{setY@{setY}!Point@{Point}}
+\subsubsection{\texorpdfstring{set\+Y()}{setY()}}
+{\footnotesize\ttfamily void Point\+::setY (\begin{DoxyParamCaption}\item[{float}]{\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Insere o valor da coordenada y. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em \+\_\+y} & Posição y a ser inserida. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_point_a9cf2c53b0a4e6282a6712824bb4e9b00}\label{class_point_a9cf2c53b0a4e6282a6712824bb4e9b00}} 
+\index{Point@{Point}!sub@{sub}}
+\index{sub@{sub}!Point@{Point}}
+\subsubsection{\texorpdfstring{sub()}{sub()}}
+{\footnotesize\ttfamily \hyperlink{class_point}{Point} Point\+::sub (\begin{DoxyParamCaption}\item[{\hyperlink{class_point}{Point}}]{p1 }\end{DoxyParamCaption})}
+
+
+
+Subtrai as coordenadas (x,y) do ponto com as coordenadas de um ponto P1(x1,y1) fornecido. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em p1} & Ponto com coordenadas (x1,y1) a serem subtraídas \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Novo ponto com coordenadas (x-\/x1,y-\/y1). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point_ad9676e36f3444534b609e3c68422239a}\label{class_point_ad9676e36f3444534b609e3c68422239a}} 
+\index{Point@{Point}!translada@{translada}}
+\index{translada@{translada}!Point@{Point}}
+\subsubsection{\texorpdfstring{translada()}{translada()}}
+{\footnotesize\ttfamily void Point\+::translada (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b }\end{DoxyParamCaption})}
+
+
+
+Transalada o ponto (x,y) de (+a,+b). 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em a} & Valor a ser transladado em x. \\
+\hline
+{\em b} & Valor a ser transladado em y. \\
+\hline
+\end{DoxyParams}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+point.\+h\item 
+point.\+cpp\end{DoxyCompactItemize}

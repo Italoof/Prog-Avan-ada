@@ -1,34 +1,30 @@
 #include <iostream>
 #include "point.h"
 #include "poligono.h"
+#include "retangulo.h"
 
 using namespace std;
 
 int main()
 {
 
-    Poligono p;
-    Point pont;
+    Retangulo ret(0,0,4,3);
 
-    p.setV(1,2);
-    p.setV(2,3);
-    p.setV(2,5);
-    p.setV(1,6);
-    p.setV(2,7);
-    p.setV(0,8);
+    ret.imprime();
 
-    cout<<p.getNV()<<" vértices\n";
-    cout<<p.area()<<" - Área\n\n";
+    cout<<"\nÁrea =" <<ret.area()<<endl<<endl;
 
-    p.imprimeP();
+    ret.translada(-3,4);
 
-cout<<endl;
+    ret.imprime();
 
-    p.translada(2,4);
+    cout<<"\nÁrea depois de transladado=" <<ret.area()<<endl<<endl;
 
-    p.imprimeP();
+    ret.rot(30,-1,2.5);
 
+    ret.imprime();
 
+    cout<<"\nÁrea depois de transladado e rotacionado=" <<ret.area()<<endl<<endl;
 
     return 0;
 

@@ -10,6 +10,51 @@ Poligono::Poligono()
     nVertices=0;
 }
 
+void Poligono::setV(float x, float y)
+{
+    bool valido=1;
+
+    if(nVertices==100) valido=0;
+
+    for(int i=0;i<nVertices;i++){
+        if(x==vertices[i].getX() && y==vertices[i].getY()){
+            valido=0;
+            break;
+        }
+    }
+
+
+    if(valido){
+        vertices[nVertices].setXY(x,y);
+        nVertices++;
+    }
+}
+
+
+void Poligono::setV(Point v)
+{
+    bool valido=1;
+
+    if(nVertices==100) valido=0;
+
+    for(int i=0;i<nVertices;i++){
+        if(v.getX()==vertices[i].getX() && v.getY()==vertices[i].getY()) {
+            valido=0;
+            break;
+        }
+    }
+
+    if(valido){
+        vertices[nVertices].setXY(v.getX(),v.getY());
+        nVertices++;
+    }
+    else {
+        cout<< "Vértice ";
+        v.imprime();
+        cout<<" inválido!\n";
+    }
+}
+
 int Poligono::getNV()
 {
     return nVertices;
@@ -81,7 +126,7 @@ void Poligono::translada(float a, float b)
     }
 }
 
-void Poligono::imprimeP()
+void Poligono::imprime()
 {
     for(int i=0;i<nVertices;i++){
         vertices[i].imprime();
@@ -91,53 +136,7 @@ void Poligono::imprimeP()
     cout<<endl;
 }
 
-void Poligono::setV(float x, float y)
-{
-    bool valido=1;
 
-    for(int i=0;i<nVertices;i++){
-        if(x==vertices[i].getX() && y==vertices[i].getY()){
-            valido=0;
-            break;
-        }
-    }
-
-
-    if(valido){
-        vertices[nVertices].setXY(x,y);
-        nVertices++;
-    }
-}
-
-void Poligono::setV(float x, float y, int vert)
-{
-    if(vert>=0 && vert<=nVertices) vertices[vert-1].setXY(x,y);
-    else cout<<"Vértice "
-             <<vert
-             <<" é inválido!\n";
-}
-
-void Poligono::setV(Point v)
-{
-    bool valido=1;
-
-    for(int i=0;i<nVertices;i++){
-        if(v.getX()==vertices[i].getX() && v.getY()==vertices[i].getY()) {
-            valido=0;
-            break;
-        }
-    }
-
-        if(valido){
-            vertices[nVertices].setXY(v.getX(),v.getY());
-            nVertices++;
-        }
-        else {
-            cout<< "Vértice ";
-            v.imprime();
-            cout<<" inválido!\n";
-        }
-    }
 
 
 

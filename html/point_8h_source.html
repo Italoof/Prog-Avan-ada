@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tratamento de Polígonos: Código-Fonte de point.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tratamento de Polígonos
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">point.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef POINT_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define POINT_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_point.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_point.html">Point</a>{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">float</span> x,y;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_point.html#a428a1676e2fdec6753c42011a1d59d18">setX</a>(<span class="keywordtype">float</span> _x);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_point.html#a9868c4601b0ea0c2d0de20fe41ee0e49">setY</a>(<span class="keywordtype">float</span> _y);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_point.html#ab5385c6d9bfa841e641e4709fc9f14cc">setXY</a>(<span class="keywordtype">float</span> _x,<span class="keywordtype">float</span> _y);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_point.html#a9aa94b8fd07296e64d304ef3750db113">getX</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_point.html#a2444daa96871c89614510bc4bfcd19ce">getY</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="class_point.html">Point</a> <a class="code" href="class_point.html#a9dbea84b07b0a8ec3bbb9e58b3d15899">add</a>(<a class="code" href="class_point.html">Point</a> p1);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="class_point.html">Point</a> <a class="code" href="class_point.html#a9cf2c53b0a4e6282a6712824bb4e9b00">sub</a>(<a class="code" href="class_point.html">Point</a> p1);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_point.html#aa3005a9d97e2cb05624414973a214788">norma</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_point.html#ad9676e36f3444534b609e3c68422239a">translada</a>(<span class="keywordtype">float</span> a, <span class="keywordtype">float</span> b);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_point.html#a188350fb70e5b297a659a31ab8887ca3">imprime</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif // POINT_H</span></div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="ttc" id="class_point_html_a9aa94b8fd07296e64d304ef3750db113"><div class="ttname"><a href="class_point.html#a9aa94b8fd07296e64d304ef3750db113">Point::getX</a></div><div class="ttdeci">float getX(void)</div><div class="ttdoc">Recupera a posição x. </div><div class="ttdef"><b>Definition:</b> point.cpp:20</div></div>
+<div class="ttc" id="class_point_html_a9868c4601b0ea0c2d0de20fe41ee0e49"><div class="ttname"><a href="class_point.html#a9868c4601b0ea0c2d0de20fe41ee0e49">Point::setY</a></div><div class="ttdeci">void setY(float _y)</div><div class="ttdoc">Insere o valor da coordenada y. </div><div class="ttdef"><b>Definition:</b> point.cpp:11</div></div>
+<div class="ttc" id="class_point_html_a188350fb70e5b297a659a31ab8887ca3"><div class="ttname"><a href="class_point.html#a188350fb70e5b297a659a31ab8887ca3">Point::imprime</a></div><div class="ttdeci">void imprime(void)</div><div class="ttdoc">Imprime o ponto na forma (x,y). </div><div class="ttdef"><b>Definition:</b> point.cpp:57</div></div>
+<div class="ttc" id="class_point_html_a9dbea84b07b0a8ec3bbb9e58b3d15899"><div class="ttname"><a href="class_point.html#a9dbea84b07b0a8ec3bbb9e58b3d15899">Point::add</a></div><div class="ttdeci">Point add(Point p1)</div><div class="ttdoc">Adiciona as coordenadas (x,y) do ponto com as coordenadas de um ponto P1(x1,y1) fornecido. </div><div class="ttdef"><b>Definition:</b> point.cpp:28</div></div>
+<div class="ttc" id="class_point_html_a2444daa96871c89614510bc4bfcd19ce"><div class="ttname"><a href="class_point.html#a2444daa96871c89614510bc4bfcd19ce">Point::getY</a></div><div class="ttdeci">float getY(void)</div><div class="ttdoc">Recupera a posição y. </div><div class="ttdef"><b>Definition:</b> point.cpp:24</div></div>
+<div class="ttc" id="class_point_html_ab5385c6d9bfa841e641e4709fc9f14cc"><div class="ttname"><a href="class_point.html#ab5385c6d9bfa841e641e4709fc9f14cc">Point::setXY</a></div><div class="ttdeci">void setXY(float _x, float _y)</div><div class="ttdoc">Insere as posições x e y. </div><div class="ttdef"><b>Definition:</b> point.cpp:15</div></div>
+<div class="ttc" id="class_point_html_aa3005a9d97e2cb05624414973a214788"><div class="ttname"><a href="class_point.html#aa3005a9d97e2cb05624414973a214788">Point::norma</a></div><div class="ttdeci">float norma(void)</div><div class="ttdoc">Calcula a distância do ponto para a origem do sistema de coordenadas. </div><div class="ttdef"><b>Definition:</b> point.cpp:48</div></div>
+<div class="ttc" id="class_point_html_a9cf2c53b0a4e6282a6712824bb4e9b00"><div class="ttname"><a href="class_point.html#a9cf2c53b0a4e6282a6712824bb4e9b00">Point::sub</a></div><div class="ttdeci">Point sub(Point p1)</div><div class="ttdoc">Subtrai as coordenadas (x,y) do ponto com as coordenadas de um ponto P1(x1,y1) fornecido. </div><div class="ttdef"><b>Definition:</b> point.cpp:38</div></div>
+<div class="ttc" id="class_point_html_a428a1676e2fdec6753c42011a1d59d18"><div class="ttname"><a href="class_point.html#a428a1676e2fdec6753c42011a1d59d18">Point::setX</a></div><div class="ttdeci">void setX(float _x)</div><div class="ttdoc">Insere o valor da coordenada x. </div><div class="ttdef"><b>Definition:</b> point.cpp:7</div></div>
+<div class="ttc" id="class_point_html_ad9676e36f3444534b609e3c68422239a"><div class="ttname"><a href="class_point.html#ad9676e36f3444534b609e3c68422239a">Point::translada</a></div><div class="ttdeci">void translada(float a, float b)</div><div class="ttdoc">Transalada o ponto (x,y) de (+a,+b). </div><div class="ttdef"><b>Definition:</b> point.cpp:52</div></div>
+<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">The Point class funciona para manipular pontos com coordenadas (x,y). </div><div class="ttdef"><b>Definition:</b> point.h:8</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

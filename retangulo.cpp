@@ -7,4 +7,5 @@ Retangulo::Retangulo(float x, float y, float largura, float altura)
     setV(x,y-altura);
     setV(x+largura,y-altura);
     setV(x+largura,y);
+
 }
